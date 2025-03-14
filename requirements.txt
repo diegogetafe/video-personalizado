@@ -2,3 +2,4 @@ flask
 dropbox
 gunicorn
 ffmpeg-python
+waitress
