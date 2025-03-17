@@ -1,1 +1,1 @@
-web: waitress-serve servidor:app 
+"web: bash start.sh" 
