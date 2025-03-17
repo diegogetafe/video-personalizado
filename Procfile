@@ -1,1 +1,1 @@
-"web: bash start.sh" 
+"web: bash start.sh && python servidor.py" 
