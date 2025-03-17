@@ -2,4 +2,4 @@ flask
 dropbox
 gunicorn
 ffmpeg-python
-waitress"# Forzando reinstalaci¢n" 
+waitress
