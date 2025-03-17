@@ -1,0 +1,1 @@
+-e "#!/bin/bash\napt-get update && apt-get install -y ffmpeg\npython servidor.py" 
