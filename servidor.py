@@ -44,7 +44,10 @@ def subir_a_dropbox(archivo_local, nombre_padre):
 
 @app.route("/generar_video", methods=["POST"])
 def generar_y_subir():
-    data = request.json
+    if not request.is_json:  # 📌 Verifica que el request sea JSON
+        return jsonify({"error": "Formato incorrecto, usa Content-Type: application/json"}), 415
+
+    data = request.get_json()  # 📌 Extrae el JSON correctamente
     nombre_padre = data.get("nombre")
 
     if not nombre_padre:
